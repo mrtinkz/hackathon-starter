@@ -1,0 +1,24 @@
+
+export MONGODB_URI="mongodb://localhost:32768"
+
+rm -rf /usr/local/lib/node_modules
+brew uninstall node
+brew update
+1. brew install nvm
+2. brew reinstall nvm
+3. nvm install node
+4. touch ~/.bash_profile
+5. update .bash_profile create if it does not exisit
+6. source ~/.bash_profile
+7. open .bash_profile
+8. npm audit
+8.
+
+
+sample .bash_profile
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export NODE_PATH="/usr/local/lib/node_modules"
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
